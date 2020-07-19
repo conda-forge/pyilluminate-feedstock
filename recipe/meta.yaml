@@ -1,5 +1,5 @@
 {% set name = "pyilluminate" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5cb32cec3b031bfad80badc3961ffa08cc10c28e2619f2065f2cf6bac7af3ac5
+  sha256: 5d8b194a86775113a1133c7c43af83159c8bd051d4dcaaad90088b1d6edf64e0
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -23,6 +23,7 @@ requirements:
     - pyserial
     - dataclasses
     - xarray
+    - filelock
 
 test:
   imports:
