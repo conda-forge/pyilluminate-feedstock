@@ -5,11 +5,9 @@ Home: https://github.com/ramonaoptics/pyilluminate
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyilluminate-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python interface for controlling the Illuminate boards.
-
-
 
 Current build status
 ====================
