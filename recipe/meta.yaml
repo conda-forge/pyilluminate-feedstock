@@ -1,5 +1,5 @@
 {% set name = "pyilluminate" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ce0afe1ded643c705b5e66f9c00c860898bbe4de364c28f4b02159ca3615bbc1
+  sha256: 7951174ab6334a8832b07ce63f61a4ab63f21c4da1b377ec8c568f424fc711b9
 
 build:
   noarch: python
