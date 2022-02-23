@@ -23,7 +23,7 @@ requirements:
     - pyserial
     - dataclasses
     - xarray
-    - filelock
+    - multiuserfilelock
 
 test:
   imports:
