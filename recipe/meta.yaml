@@ -16,15 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7,<4
     - pip
   run:
-    - python >=3.6
+    - python >=3.7,<4
     - numpy
     - pyserial
     - dataclasses
     - xarray
     - multiuserfilelock
+    - packaging
 
 test:
   imports:
