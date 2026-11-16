@@ -11,20 +11,21 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }},<4
     - numpy
     - pyserial
     - dataclasses
     - xarray
-    - multiuserfilelock
+    - multiuserfilelock >=0.1.0
     - packaging
 
 test:
